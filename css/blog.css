@@ -1,0 +1,467 @@
+/* Blog Page Styles */
+
+/* Active State for Navigation */
+.main-nav ul li a.active {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* Blog Header Section */
+.blog-header {
+    background-color: var(--primary-color);
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.blog-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.blog-header h1 i {
+    margin-left: 10px;
+    color: var(--accent-color);
+}
+
+.blog-header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Featured Articles Section */
+.featured-articles {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.featured-slider {
+    position: relative;
+    margin-bottom: 30px;
+    height: 450px;
+}
+
+.featured-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.featured-slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.featured-article {
+    position: relative;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.featured-article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.article-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+}
+
+.article-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.article-meta .date {
+    margin-right: 20px;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.slider-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dot.active {
+    background-color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+.slider-arrows {
+    display: flex;
+    gap: 15px;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.arrow:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Categories Section */
+.blog-categories {
+    padding: 50px 0;
+    background-color: var(--light-color);
+}
+
+.blog-categories h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category-item {
+    background-color: white;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.category-item:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Blog Section Styles */
+.blog-section {
+    padding: 70px 0;
+}
+
+.blog-section.bg-light {
+    background-color: #f9f9fb;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.view-all {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.view-all:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.article-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.article-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.article-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.article-card:hover .article-image img {
+    transform: scale(1.05);
+}
+
+.article-content {
+    padding: 25px 20px;
+}
+
+.article-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.article-content p {
+    font-size: 14px;
+    color: var(--light-text);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 65px;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--light-text);
+}
+
+.article-author {
+    font-weight: 500;
+}
+
+.article-date {
+    display: flex;
+    align-items: center;
+}
+
+.article-date i {
+    margin-right: 5px;
+    color: var(--secondary-color);
+}
+
+/* Related Courses Section */
+.related-courses {
+    padding: 70px 0;
+    background-color: #f5f0fc;
+}
+
+.related-courses h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.courses-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.related-course {
+    position: relative;
+    width: calc(33.333% - 20px);
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.related-course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.related-course img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.related-course:hover img {
+    transform: scale(1.05);
+}
+
+.course-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+}
+
+.course-overlay h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .articles-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .featured-slider {
+        height: 400px;
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courses-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .related-course {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-slider {
+        height: 350px;
+    }
+
+    .article-content h2 {
+        font-size: 24px;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .related-course {
+        width: 90%;
+    }
+
+    .section-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .section-header h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 576px) {
+    .featured-slider {
+        height: 300px;
+    }
+
+    .article-content h2 {
+        font-size: 20px;
+    }
+
+    .article-content {
+        padding: 20px 15px;
+    }
+
+    .blog-header h1 {
+        font-size: 28px;
+    }
+
+    .blog-header p {
+        font-size: 16px;
+    }
+}

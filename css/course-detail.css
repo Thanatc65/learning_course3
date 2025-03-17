@@ -1,0 +1,592 @@
+/* Course Detail Page Styles */
+
+/* Course Hero Section */
+.course-hero {
+    padding: 50px 0;
+    background-color: #f9f9fb;
+}
+
+.course-hero-content {
+    display: flex;
+    gap: 40px;
+}
+
+.course-video {
+    flex: 1;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.course-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-info h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.instructor-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.instructor-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.instructor-details h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.instructor-details p {
+    font-size: 14px;
+    color: var(--light-text);
+}
+
+.course-stats {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: var(--light-text);
+    font-size: 14px;
+}
+
+.stat-item i {
+    margin-right: 8px;
+    color: var(--secondary-color);
+}
+
+.course-price-section {
+    margin-bottom: 30px;
+}
+
+.course-price {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.course-price h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+
+.original-price {
+    font-size: 18px;
+    color: var(--light-text);
+    text-decoration: line-through;
+}
+
+.buy-now-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: var(--transition);
+}
+
+.buy-now-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.add-to-cart-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.series-bundle {
+    margin-top: 30px;
+    background-color: #f5f0fc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.series-bundle h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.bundle-info p {
+    font-size: 14px;
+    color: var(--light-text);
+    margin-bottom: 15px;
+}
+
+.bundle-thumbnails {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.bundle-thumb {
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: var(--transition);
+    opacity: 0.7;
+}
+
+.bundle-thumb.active {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bundle-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bundle-plus {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 0 5px;
+}
+
+.bundle-price {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.bundle-price .price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+
+.buy-series-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.buy-series-btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* Course Details Section */
+.course-details {
+    padding: 60px 0;
+}
+
+.details-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.details-content {
+    flex: 2;
+}
+
+.course-curriculum {
+    flex: 1;
+}
+
+.course-badge {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9fb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.course-badge img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.course-badge span {
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.course-about {
+    margin-bottom: 40px;
+}
+
+.course-about h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    list-style: none;
+}
+
+.feature-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.feature-list li i {
+    color: var(--accent-color);
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.company-trust {
+    margin-bottom: 40px;
+}
+
+.company-trust h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.company-trust p {
+    font-size: 16px;
+    color: var(--light-text);
+    margin-bottom: 20px;
+}
+
+.company-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.company-logos img {
+    height: 40px;
+    opacity: 0.7;
+    transition: var(--transition);
+    filter: grayscale(1);
+}
+
+.company-logos img:hover {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.course-content-details h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.content-description {
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.content-description p {
+    margin-bottom: 15px;
+}
+
+.content-description ul,
+.content-description ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.content-description li {
+    margin-bottom: 10px;
+}
+
+.content-description strong {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Curriculum Section */
+.curriculum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.curriculum-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.curriculum-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 14px;
+    color: var(--light-text);
+}
+
+.curriculum-info span {
+    margin-bottom: 5px;
+}
+
+.curriculum-info i {
+    margin-right: 5px;
+    color: var(--secondary-color);
+}
+
+.curriculum-section {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #f9f9fb;
+    transition: var(--transition);
+}
+
+.section-header:hover {
+    background-color: #f0e9f5;
+}
+
+.section-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.section-meta {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--light-text);
+}
+
+.section-meta i {
+    margin-left: 15px;
+    transition: var(--transition);
+}
+
+.section-header.active i {
+    transform: rotate(180deg);
+}
+
+.section-content {
+    padding: 15px 20px;
+    display: none;
+}
+
+.section-header.active + .section-content {
+    display: block;
+}
+
+.lecture-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.lecture-info {
+    display: flex;
+    align-items: center;
+}
+
+.lecture-info i {
+    margin-right: 10px;
+    color: var(--secondary-color);
+}
+
+.lecture-duration {
+    font-size: 14px;
+    color: var(--light-text);
+}
+
+/* Certificate Section */
+.certificate-section {
+    padding: 60px 0;
+    background-color: #f5f0fc;
+}
+
+.certificate-content {
+    display: flex;
+    align-items: center;
+}
+
+.certificate-info {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.certificate-info h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.certificate-info p {
+    font-size: 16px;
+    color: var(--light-text);
+}
+
+.certificate-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.certificate-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .details-wrapper {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .course-hero-content {
+        flex-direction: column;
+    }
+
+    .course-video {
+        height: 350px;
+    }
+
+    .details-wrapper {
+        flex-direction: column;
+    }
+
+    .certificate-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .certificate-info {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-video {
+        height: 300px;
+    }
+
+    .course-info h1 {
+        font-size: 24px;
+    }
+
+    .company-logos {
+        justify-content: center;
+    }
+
+    .curriculum-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .curriculum-info {
+        margin-top: 10px;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .course-video {
+        height: 250px;
+    }
+
+    .course-price h2 {
+        font-size: 28px;
+    }
+
+    .course-price .original-price {
+        font-size: 16px;
+    }
+
+    .course-badge {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .course-badge img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .section-header h3 {
+        font-size: 14px;
+    }
+
+    .section-meta {
+        font-size: 12px;
+    }
+}
